@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme background -->
+    <color name="background_dark">#FF1A1D21</color>
+    <color name="surface_dark">#FF252830</color>
+    <color name="card_dark">#FF2D323C</color>
+    <color name="card_elevated">#FF363D48</color>
+
+    <!-- Primary accent -->
+    <color name="primary_blue">#FF2196F3</color>
+    <color name="primary_blue_dark">#FF1976D2</color>
+
+    <!-- Semantic -->
+    <color name="positive_green">#FF4CAF50</color>
+    <color name="negative_red">#FFF44336</color>
+    <color name="stable_green">#FF8BC34A</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFB0B5BC</color>
+    <color name="text_hint">#FF6B7280</color>
+
+    <!-- Account type accent circles -->
+    <color name="account_savings">#FF2196F3</color>
+    <color name="account_checking">#FF607D8B</color>
+    <color name="account_credit">#FFF44336</color>
+    <color name="account_cash">#FF4CAF50</color>
+
+    <!-- Legacy (keep for compatibility) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

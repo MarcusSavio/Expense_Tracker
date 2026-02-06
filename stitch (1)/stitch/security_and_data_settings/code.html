@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Security and Data Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0b50da",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<!-- TopAppBar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-gray-200 dark:border-gray-800">
+<div class="text-gray-900 dark:text-white flex size-12 shrink-0 items-center cursor-pointer">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</div>
+<h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Security &amp; Data</h2>
+</div>
+<div class="flex-1 overflow-y-auto">
+<!-- Privacy Banner -->
+<div class="m-4 p-4 rounded-xl bg-primary/10 border border-primary/20">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+<div>
+<h4 class="text-gray-900 dark:text-white font-bold text-sm">Your data stays with you</h4>
+<p class="text-gray-600 dark:text-gray-400 text-xs mt-1">This app is offline-first. No financial data ever leaves your device or is stored on our servers.</p>
+</div>
+</div>
+</div>
+<!-- SectionHeader: Security -->
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Security Settings</h3>
+<!-- ListItem: App Lock -->
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-16 justify-between border-b border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-4">
+<div class="text-gray-900 dark:text-white flex items-center justify-center rounded-lg bg-gray-200 dark:bg-[#282e39] shrink-0 size-10">
+<span class="material-symbols-outlined">lock</span>
+</div>
+<p class="text-gray-900 dark:text-white text-base font-normal leading-normal flex-1 truncate">App Lock (PIN/Biometric)</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-gray-300 dark:bg-[#282e39] p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary transition-all">
+<div class="h-full w-[27px] rounded-full bg-white shadow-md"></div>
+<input checked="" class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- ListItem: Auto-lock timer -->
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-16 justify-between border-b border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-4">
+<div class="text-gray-900 dark:text-white flex items-center justify-center rounded-lg bg-gray-200 dark:bg-[#282e39] shrink-0 size-10">
+<span class="material-symbols-outlined">timer</span>
+</div>
+<p class="text-gray-900 dark:text-white text-base font-normal leading-normal flex-1 truncate">Auto-lock timer</p>
+</div>
+<div class="shrink-0 flex items-center gap-2">
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal">Immediately</p>
+<span class="material-symbols-outlined text-gray-400 text-sm">chevron_right</span>
+</div>
+</div>
+<!-- ListItem: Hidden Balances -->
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-16 justify-between border-b border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-4">
+<div class="text-gray-900 dark:text-white flex items-center justify-center rounded-lg bg-gray-200 dark:bg-[#282e39] shrink-0 size-10">
+<span class="material-symbols-outlined">visibility_off</span>
+</div>
+<p class="text-gray-900 dark:text-white text-base font-normal leading-normal flex-1 truncate">Hidden Balances</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-gray-300 dark:bg-[#282e39] p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary transition-all">
+<div class="h-full w-[27px] rounded-full bg-white shadow-md"></div>
+<input class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- SectionHeader: Data Management -->
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-8">Data Management</h3>
+<!-- ListItem: Export CSV -->
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-16 justify-between border-b border-gray-100 dark:border-gray-800 cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="text-gray-900 dark:text-white flex items-center justify-center rounded-lg bg-gray-200 dark:bg-[#282e39] shrink-0 size-10">
+<span class="material-symbols-outlined">csv</span>
+</div>
+<div>
+<p class="text-gray-900 dark:text-white text-base font-normal leading-tight">Export to CSV</p>
+<p class="text-gray-500 text-xs">Spreadsheet compatible</p>
+</div>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-gray-400">download</span>
+</div>
+</div>
+<!-- ListItem: Create Local Backup -->
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-16 justify-between border-b border-gray-100 dark:border-gray-800 cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="text-gray-900 dark:text-white flex items-center justify-center rounded-lg bg-gray-200 dark:bg-[#282e39] shrink-0 size-10">
+<span class="material-symbols-outlined">backup</span>
+</div>
+<div>
+<p class="text-gray-900 dark:text-white text-base font-normal leading-tight">Create Local Backup</p>
+<p class="text-gray-500 text-xs">Encrypted file on device</p>
+</div>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-gray-400">add_to_drive</span>
+</div>
+</div>
+<!-- ListItem: Restore from File -->
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-16 justify-between border-b border-gray-100 dark:border-gray-800 cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="text-gray-900 dark:text-white flex items-center justify-center rounded-lg bg-gray-200 dark:bg-[#282e39] shrink-0 size-10">
+<span class="material-symbols-outlined">settings_backup_restore</span>
+</div>
+<div>
+<p class="text-gray-900 dark:text-white text-base font-normal leading-tight">Restore from File</p>
+<p class="text-gray-500 text-xs">Overwrites current data</p>
+</div>
+</div>
+<div class="shrink-0 text-primary">
+<span class="material-symbols-outlined">upload_file</span>
+</div>
+</div>
+<!-- Warning Section -->
+<div class="px-4 py-8">
+<div class="p-4 rounded-xl border border-red-500/30 bg-red-500/5">
+<h4 class="text-red-500 font-bold text-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">warning</span>
+                        Data Responsibility
+                    </h4>
+<p class="text-gray-600 dark:text-gray-400 text-xs mt-2 leading-relaxed">
+                        Since your data is not synced to any cloud, if you lose your phone or delete the app without a backup, your data will be permanently lost. We recommend creating monthly backups.
+                    </p>
+</div>
+</div>
+<!-- Footer Spacing -->
+<div class="h-20"></div>
+</div>
+<!-- iOS Home Indicator simulation -->
+<div class="h-8 w-full bg-background-light dark:bg-background-dark flex justify-center items-end pb-2">
+<div class="w-32 h-1 bg-gray-300 dark:bg-gray-700 rounded-full"></div>
+</div>
+</div>
+</body></html>

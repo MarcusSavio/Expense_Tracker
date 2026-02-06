@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Financial Goals Tracker</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0b50da",
+                        "emerald-custom": "#10b981",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col max-w-[480px] mx-auto overflow-x-hidden border-x border-slate-200 dark:border-slate-800">
+<!-- Top Navigation -->
+<div class="sticky top-0 z-10 flex items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md p-4 pb-2 justify-between">
+<div class="flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined cursor-pointer">arrow_back_ios</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Financial Goals</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex cursor-pointer items-center justify-center rounded-lg h-12 bg-transparent gap-2 text-base font-bold min-w-0 p-0">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Summary Stats Section -->
+<div class="px-4 py-2">
+<div class="flex flex-col gap-1 mb-6">
+<p class="text-slate-500 dark:text-[#9ca6ba] text-sm font-medium">Total Saved</p>
+<div class="flex items-baseline gap-2">
+<h1 class="text-3xl font-extrabold">$18,200</h1>
+<span class="text-emerald-custom text-sm font-bold leading-normal">+12% this month</span>
+</div>
+</div>
+</div>
+<!-- Suggestion Action Panel -->
+<div class="px-4 mb-6 @container">
+<div class="flex flex-1 flex-col items-start justify-between gap-4 rounded-xl border border-primary/20 bg-primary/5 p-5 @[480px]:flex-row @[480px]:items-center">
+<div class="flex items-start gap-3">
+<div class="p-2 bg-primary/20 rounded-lg">
+<span class="material-symbols-outlined text-primary">lightbulb</span>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-base font-bold leading-tight">Monthly Suggestion</p>
+<p class="text-slate-600 dark:text-[#9ca6ba] text-sm font-normal leading-normal">Save $200 more this month to stay on track for your House Down Payment goal.</p>
+</div>
+</div>
+<button class="flex min-w-[84px] w-full @[480px]:w-auto cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-medium leading-normal">
+<span class="truncate">Adjust Budget</span>
+</button>
+</div>
+</div>
+<!-- Goals List -->
+<div class="px-4 flex flex-col gap-4 pb-24">
+<h3 class="text-base font-bold px-1">Active Goals</h3>
+<!-- Goal 1: Emergency Fund -->
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-sm bg-white dark:bg-[#1b1f27] border border-slate-100 dark:border-slate-800 overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-[16/6] bg-cover" data-alt="Abstract emerald green wavy pattern" style="background-image: linear-gradient(135deg, #064e3b 0%, #10b981 100%);"></div>
+<div class="flex w-full flex-col items-stretch justify-center gap-4 p-4">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-lg font-bold leading-tight tracking-[-0.015em]">Emergency Fund</p>
+<p class="text-slate-500 dark:text-[#9ca6ba] text-xs font-normal mt-1">Estimated: Oct 2024</p>
+</div>
+<span class="material-symbols-outlined text-slate-400">shield</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex gap-6 justify-between items-end">
+<p class="text-sm font-medium leading-normal"><span class="text-emerald-custom">$4,500</span> <span class="text-slate-400 text-xs">of $10,000</span></p>
+<p class="text-sm font-bold leading-normal">45%</p>
+</div>
+<div class="rounded-full bg-slate-100 dark:bg-[#3b4354] h-2.5 overflow-hidden">
+<div class="h-full rounded-full bg-emerald-custom" style="width: 45%;"></div>
+</div>
+<p class="text-slate-500 dark:text-[#9ca6ba] text-xs font-normal leading-normal">$5,500 to go</p>
+</div>
+</div>
+</div>
+<!-- Goal 2: New Laptop -->
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-sm bg-white dark:bg-[#1b1f27] border border-slate-100 dark:border-slate-800 overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-[16/6] bg-cover" data-alt="Dark blue tech circuit pattern" style="background-image: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);"></div>
+<div class="flex w-full flex-col items-stretch justify-center gap-4 p-4">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-lg font-bold leading-tight tracking-[-0.015em]">New Laptop</p>
+<p class="text-slate-500 dark:text-[#9ca6ba] text-xs font-normal mt-1">Estimated: Aug 2024</p>
+</div>
+<span class="material-symbols-outlined text-slate-400">laptop_mac</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex gap-6 justify-between items-end">
+<p class="text-sm font-medium leading-normal"><span class="text-primary">$1,200</span> <span class="text-slate-400 text-xs">of $2,000</span></p>
+<p class="text-sm font-bold leading-normal">60%</p>
+</div>
+<div class="rounded-full bg-slate-100 dark:bg-[#3b4354] h-2.5 overflow-hidden">
+<div class="h-full rounded-full bg-primary" style="width: 60%;"></div>
+</div>
+<p class="text-slate-500 dark:text-[#9ca6ba] text-xs font-normal leading-normal">$800 to go</p>
+</div>
+</div>
+</div>
+<!-- Goal 3: House Down Payment -->
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-sm bg-white dark:bg-[#1b1f27] border border-slate-100 dark:border-slate-800 overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-[16/6] bg-cover" data-alt="Abstract orange and gold modern architecture pattern" style="background-image: linear-gradient(135deg, #431407 0%, #f97316 100%);"></div>
+<div class="flex w-full flex-col items-stretch justify-center gap-4 p-4">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-lg font-bold leading-tight tracking-[-0.015em]">House Down Payment</p>
+<p class="text-slate-500 dark:text-[#9ca6ba] text-xs font-normal mt-1">Estimated: May 2026</p>
+</div>
+<span class="material-symbols-outlined text-slate-400">home</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex gap-6 justify-between items-end">
+<p class="text-sm font-medium leading-normal"><span class="text-orange-500">$12,500</span> <span class="text-slate-400 text-xs">of $50,000</span></p>
+<p class="text-sm font-bold leading-normal">25%</p>
+</div>
+<div class="rounded-full bg-slate-100 dark:bg-[#3b4354] h-2.5 overflow-hidden">
+<div class="h-full rounded-full bg-orange-500" style="width: 25%;"></div>
+</div>
+<p class="text-slate-500 dark:text-[#9ca6ba] text-xs font-normal leading-normal">$37,500 to go</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Action Button -->
+<div class="fixed bottom-6 right-6 z-20">
+<button class="flex size-14 items-center justify-center rounded-full bg-primary text-white shadow-xl hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined" style="font-size: 32px;">add</span>
+</button>
+</div>
+<!-- Bottom Navigation Spacer -->
+<div class="h-5 bg-transparent"></div>
+</div>
+</body></html>
