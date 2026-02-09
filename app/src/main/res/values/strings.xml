@@ -13,4 +13,12 @@
     <string name="add_new_account">Add New Account</string>
     <string name="history">History:</string>
     <string name="settings">Settings</string>
+    <string name="add_transaction">Add transaction</string>
+    <string name="this_month">This month</string>
+    <string name="income">Income</string>
+    <string name="expenses">Expenses</string>
+    <string name="net">Net</string>
+    <string name="fire_planner">FIRE Planner</string>
+    <string name="fire_number">FIRE number</string>
+    <string name="fire_progress">FIRE progress</string>
 </resources>
