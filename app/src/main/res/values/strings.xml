@@ -21,4 +21,12 @@
     <string name="fire_planner">FIRE Planner</string>
     <string name="fire_number">FIRE number</string>
     <string name="fire_progress">FIRE progress</string>
+    <string name="amount">Amount</string>
+    <string name="description">Description</string>
+    <string name="notes">Notes</string>
+    <string name="account">Account</string>
+    <string name="category">Category</string>
+    <string name="save">Save</string>
+    <string name="overview">Overview</string>
+    <string name="goals">Goals</string>
 </resources>

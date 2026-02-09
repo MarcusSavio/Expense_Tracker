@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.expensetracker.data.database.DatabaseModule
 import com.example.expensetracker.data.entity.Transaction
@@ -54,9 +55,10 @@ class TransactionsFragment : Fragment() {
             }
         }
 
-        // TODO: Navigate to add/edit transaction screen
         binding.fabAddTransaction.setOnClickListener {
-            // Placeholder for add transaction flow
+            findNavController().navigate(
+                com.example.expensetracker.R.id.action_transactions_to_addTransaction
+            )
         }
     }
 

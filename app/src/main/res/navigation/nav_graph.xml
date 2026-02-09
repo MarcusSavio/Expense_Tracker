@@ -15,7 +15,11 @@
         android:id="@+id/navigation_transactions"
         android:name="com.example.expensetracker.ui.transactions.TransactionsFragment"
         android:label="@string/title_transactions"
-        tools:layout="@layout/fragment_transactions" />
+        tools:layout="@layout/fragment_transactions">
+        <action
+            android:id="@+id/action_transactions_to_addTransaction"
+            app:destination="@id/add_transaction_fragment" />
+    </fragment>
     
     <fragment
         android:id="@+id/navigation_accounts"
@@ -28,4 +32,10 @@
         android:name="com.example.expensetracker.ui.reports.ReportsFragment"
         android:label="@string/title_reports"
         tools:layout="@layout/fragment_reports" />
+
+    <fragment
+        android:id="@+id/add_transaction_fragment"
+        android:name="com.example.expensetracker.ui.transactions.AddTransactionFragment"
+        android:label="@string/add_transaction"
+        tools:layout="@layout/fragment_add_transaction" />
 </navigation>
